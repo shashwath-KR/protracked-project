@@ -4,17 +4,15 @@ import './products.css';
 import {FaStarHalfAlt} from 'react-icons/fa';
 import {BsCart4} from 'react-icons/bs';
 
-const Products = ({setLoad, setProduct, pro, Carting}) => {
+const Products = ({setProduct, pro, Carting}) => {
 
 let url = "https://dummyjson.com/products?limit=100"
 
 const fetchData = async() => {
   try {
-    setLoad(true)
        const response = await axios(url)
         const reslt = response.data.products;
         setProduct(reslt);
-        setLoad(false) 
       } 
       catch(error)  {
        console.log(error);
