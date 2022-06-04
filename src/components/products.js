@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import axios from 'axios';
 import './products.css';
 import {FaStarHalfAlt} from 'react-icons/fa';
@@ -23,13 +23,7 @@ const fetchData = async() => {
    fetchData();
   }, [])
 
-
     return (
-        pro.length === 0 ?
-        <div className='pro-h1'>
-          <h1>Not Found...</h1>
-        </div>
-        :
           pro.map((res) => {
            const{title, description, price, discountPercentage, rating,
            thumbnail} = res
