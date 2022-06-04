@@ -28,7 +28,7 @@ const[product, setProduct] = React.useState([]);
 
   return (
      <Routes>
-   <Route path='/' element = {<Home Ary= {Ary} product= {product} setProduct= {setProduct}/>} />
+   <Route path='/protracked-project' element = {<Home Ary= {Ary} product= {product} setProduct= {setProduct}/>} />
    <Route path= '/smartphones' element = {<Mobile />} />
    <Route path= '/laptops' element = {<Laptop />} />
    <Route path= '/skincare' element = {<Skincare />} />
