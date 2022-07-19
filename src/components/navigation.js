@@ -1,6 +1,7 @@
 import React from "react";
 import './navigation.css';
-import {Link} from 'react-router-dom';  
+import {Link} from 'react-router-dom';
+import {AiOutlineMenu} from 'react-icons/ai';
 
 const Navigation = ({Ary}) => {
 const[visible, setVisible] = React.useState('hidden');
@@ -23,17 +24,16 @@ const Visibility = () => {
 
     return (
         <div>
-           <div onClick={Visibility} className="bar">
-               <div className="line"></div>
-               <div className="line"></div>
-               <div className="line"></div>
-           </div>
+           <button onClick={Visibility} className="bar">
+               <AiOutlineMenu className="line" />
+           </button>
            <div style={menu}>{
                Ary.map((categ, index) => {
                    return (
-                     <div key={index} className="categ">
-                      <Link className="lists" to={categ.path}><button className="list">{categ.category}</button></Link>
-                     </div>
+            <div key={index} className="categ">     
+ <Link className = 'lists' to = {categ.path}><button 
+className="list">{categ.category}</button></Link>
+            </div>
                    )
                })
            }</div>

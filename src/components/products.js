@@ -4,20 +4,7 @@ import './products.css';
 import {FaStarHalfAlt} from 'react-icons/fa';
 import {BsCart4} from 'react-icons/bs';
 
-const Products = ({setProduct, pro, Carting}) => {
-
-let url = "https://dummyjson.com/products?limit=100"
-
-const fetchData = async() => {
-  try {
-       const response = await axios(url)
-        const reslt = response.data.products;
-        setProduct(reslt);
-      } 
-      catch(error)  {
-       console.log(error);
-  }
-}
+const Products = ({setProduct, pro, Carting, setLoad, fetchData}) => {
 
   useEffect(() => {
    fetchData();
@@ -26,7 +13,7 @@ const fetchData = async() => {
     return (
           pro.map((res) => {
            const{title, description, price, discountPercentage, rating,
-           thumbnail} = res
+           thumbnail} = res;
            return (
              <div className='card' key={res.id}>
              <img src={thumbnail} alt='product' width='370px' height='290px' />

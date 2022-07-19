@@ -3,13 +3,14 @@ import './header.css';
 import Logo from '../img/Shopping-Logo.jpg';
 import {BsFillCartCheckFill} from 'react-icons/bs';
 
-const Header = ({input, setInput, count}) => {
+const Header = ({input, setInput, count, counts}) => {
+ 
 
     return (
         <div className="nav">
         <img src={Logo} alt='shop' style={{borderRadius: '50%'}} width='70px' height='70px' />
         <div className="Right-side">
-        <div><span className="count">{count}</span>
+        <div><span style={counts}>{count}</span>
         <BsFillCartCheckFill style={{color: 'orange', fontSize: '32px'}}/>
         </div>
         <input value={input} type='text' placeholder="Search"

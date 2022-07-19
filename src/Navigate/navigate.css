@@ -124,3 +124,8 @@
   transition: 0.2s;
 }
 
+.images:hover {
+   zoom: 140%;
+  transition: 2.6s ease-in;
+}
+

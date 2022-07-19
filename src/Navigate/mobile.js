@@ -3,7 +3,7 @@ import axios from "axios";
 import './navigate.css';
 import {FaStarHalfAlt, FaAngleLeft, FaAngleRight} from 'react-icons/fa';
 
-const Mobile = () => {
+const Mobile = ({categ}) => {
     const[item, setItem] = useState([]);
     const[slide, setSlide] = useState(0);
 
@@ -12,7 +12,7 @@ const Mobile = () => {
             const result = await axios.get('https://dummyjson.com/products?limit=100');
 
             const allItems = result.data.products;
-        const filtItems = allItems.filter(lis => lis.category === 'smartphones');
+        const filtItems = allItems.filter(lis => lis.category === categ.path)
         setItem(filtItems);    
         }  
         getItems()
@@ -20,11 +20,11 @@ const Mobile = () => {
 
     return ( 
       <main className="container">
-      <h1 className="head">smartphones</h1>
+      <h1 className="head">{categ.category}</h1>
         <div className="content">{
             item.map((get) => {
            const{title, description, price, discountPercentage, rating, stock
-           , brand, category, images} = get
+           , brand, category, images} = get;
 
            const onSlide = (num) => {
       if(num > images.length - 1) {
@@ -39,7 +39,6 @@ const Mobile = () => {
     const Clicks = (slide) => {
       setSlide(onSlide(slide))
     }
-
 
            return (
              <div key={get.id} className='box'>
