@@ -31,8 +31,8 @@ const Visibility = () => {
                Ary.map((categ, index) => {
                    return (
             <div key={index} className="categ">     
- <Link className = 'lists' to = {categ.path}><button 
-className="list">{categ.category}</button></Link>
+ <Link className = 'lists' to = {categ.path}><button
+    className="list">{categ.category}</button></Link>
             </div>
                    )
                })
