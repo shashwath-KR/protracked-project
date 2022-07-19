@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/protracked-project/static/css/main.f9249c0e.css",
-    "main.js": "/protracked-project/static/js/main.9bd96d1c.js",
+    "main.js": "/protracked-project/static/js/main.bde92904.js",
     "static/media/Shopping-Logo.jpg": "/protracked-project/static/media/Shopping-Logo.6bde7378814434ff09ce.jpg",
     "index.html": "/protracked-project/index.html",
     "main.f9249c0e.css.map": "/protracked-project/static/css/main.f9249c0e.css.map",
-    "main.9bd96d1c.js.map": "/protracked-project/static/js/main.9bd96d1c.js.map"
+    "main.bde92904.js.map": "/protracked-project/static/js/main.bde92904.js.map"
   },
   "entrypoints": [
     "static/css/main.f9249c0e.css",
-    "static/js/main.9bd96d1c.js"
+    "static/js/main.bde92904.js"
   ]
 }
