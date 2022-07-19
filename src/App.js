@@ -10,7 +10,7 @@ const[product, setProduct] = React.useState([]);
 
   return (
      <Routes>
-   <Route path='/' element = {<Home Ary={Ary} product= {product} setProduct= {setProduct}/>} />
+   <Route path='/protracked-project' element = {<Home Ary={Ary} product= {product} setProduct= {setProduct}/>} />
    { Ary.map((categ, index) => {
   return <Route key={index} path= {categ.path} element = {<Mobile categ={categ} />} />
 })
