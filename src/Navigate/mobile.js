@@ -13,7 +13,7 @@ const Mobile = ({categ}) => {
 
             const allItems = result.data.products;
         const filtItems = allItems.filter(lis => lis.category === categ.path)
-        setItem(filtItems);    
+        setItem(filtItems); 
         }  
         getItems()
     }, [])
@@ -47,7 +47,7 @@ const Mobile = ({categ}) => {
                <img className='images'  src={images[slide]} 
                    alt= 'products' width='800px' height='600px' />
                    <button onClick={() => Clicks(slide + 1)}><FaAngleRight /></button>
-             </div>
+             </div> 
                <h3 className="title1">{title}</h3>
                <p className="discrp1">{description}</p>
                <div className="pricing1">
