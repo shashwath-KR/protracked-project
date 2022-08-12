@@ -16,7 +16,7 @@ const Products = ({setProduct, pro, Carting, setLoad, fetchData}) => {
            thumbnail} = res;
            return (
              <div className='card' key={res.id}>
-             <img src={thumbnail} alt='product' width='370px' height='290px' />
+             <img className='imgs' src={thumbnail} alt='product' width='370px' height='290px' />
                <h3 className='title'>{title}</h3>
                <p className='discrp'>{description}</p>
                <div className='pricing'>

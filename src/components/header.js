@@ -8,9 +8,9 @@ const Header = ({input, setInput, count, counts}) => {
 
     return (
         <div className="nav">
-        <img src={Logo} alt='shop' style={{borderRadius: '50%'}} width='70px' height='70px' />
+        <img className="logo" src={Logo} alt='shop' width='70px' height='70px' />
         <div className="Right-side">
-        <div><span style={counts}>{count}</span>
+        <div className="icon"><span style={counts}>{count}</span>
         <BsFillCartCheckFill style={{color: 'orange', fontSize: '32px'}}/>
         </div>
         <input value={input} type='text' placeholder="Search"

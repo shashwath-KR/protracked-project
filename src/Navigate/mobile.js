@@ -44,8 +44,10 @@ const Mobile = ({categ}) => {
              <div key={get.id} className='box'>
              <div className="slide">
              <button onClick={() => Clicks(slide - 1)}><FaAngleLeft /></button>
-               <img className='images'  src={images[slide]} 
-                   alt= 'products' width='800px' height='600px' />
+             <div className="images1">
+                 <img className='images'  src={images[slide]} 
+                   alt= 'products' />
+             </div>
                    <button onClick={() => Clicks(slide + 1)}><FaAngleRight /></button>
              </div> 
                <h3 className="title1">{title}</h3>

@@ -51,7 +51,7 @@ const fetchData = async() => {
       <nav className='contain'>
         <Navigation Ary= {Ary} />
       </nav>
-      <h1 className="f1">Shop by all..</h1>
+        <h1 className="f1">Shop by all..</h1>
       <main className="App-header">
         <div className='cards'>
         <Products fetchData={fetchData} Carting = {Carting} pro = {Filtered} setProduct= {setProduct} />
