@@ -38,23 +38,23 @@ const fetchData = async() => {
 }
 
   const Carting = () => {
-     setCount(count + 1);
+      setCount(count + 1);
      setBackg('blue')
   }
 
     return (
         <section className="App">
-      <header className='header'>
-        <Header count= {count} counts= {counts} input = {input} setInput= {setInput}/>
-      </header>
+        <header className="header">
+            <Header count= {count} counts= {counts} input = {input} setInput= {setInput}/>
+        </header>
       <div>
       <nav className='contain'>
         <Navigation Ary= {Ary} />
       </nav>
-        <h1 className="f1">Shop by all..</h1>
+      
       <main className="App-header">
         <div className='cards'>
-        <Products fetchData={fetchData} Carting = {Carting} pro = {Filtered} setProduct= {setProduct} />
+        <Products count = {count} fetchData={fetchData} Carting = {Carting} pro = {Filtered} setProduct= {setProduct} />
        </div>
       </main>
       </div>

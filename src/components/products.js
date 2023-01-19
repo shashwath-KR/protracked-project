@@ -4,7 +4,7 @@ import './products.css';
 import {FaStarHalfAlt} from 'react-icons/fa';
 import {BsCart4} from 'react-icons/bs';
 
-const Products = ({setProduct, pro, Carting, setLoad, fetchData}) => {
+const Products = ({setProduct, pro, Carting, setLoad, fetchData, count}) => {
 
   useEffect(() => {
    fetchData();
