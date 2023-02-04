@@ -1,12 +1,21 @@
-.card {
+.main {
+    display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   width: auto;
+   height: auto;
+    margin: 20px 20px auto;
+    border: 2px solid blue;
+}
+
+.mycard {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 255, 255);
   height: auto;
-  width: 260px;
-  margin: 10px;
+  width: auto;
+  margin: 20px 20px auto;
   border-radius: 5px;
   box-shadow: 5px 0px 2px 0px #e8eaec;
 }
@@ -16,13 +25,46 @@
   margin-top: 18px;
 }
 
+.cartflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .check {
+        margin: auto;
+        padding: 8px;
+    }
+
+    .clearAll {
+        font-size: 16px;
+        background-color: blue;
+        border-radius: 4px;
+        color: white;
+        padding: 5px 12px;
+    }
+
 @media screen and (min-width:600px) {
+
+    .cartflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+  margin: 15px;
+  border: 2px solid blue;
+}
+
   .imgs {
   width: 70%;
   height: 290px;
   margin-top: 0px;
 }
-  .card {
+  .mycard {
     position: relative;
     top: 20px;
   width: 35%;
@@ -34,6 +76,10 @@
   margin: 20px;
   border-radius: 5px;
   box-shadow: 5px 0px 2px 0px #e8eaec;
+}
+.card:hover {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
 }
 }
 
@@ -119,7 +165,7 @@
   background-color: #e8eaec;
 }
 
-.cart {
+.mycart {
   font-size: 16px;
   padding: 9px 13px;
   margin-top: 10px;
@@ -147,4 +193,32 @@
 
 .pro-h1 h1 {
   text-align: center;
+}
+
+.cartEmpty {
+    display: grid;
+    place-items: center;
+    height: 97vh;
+    margin: 10px;
+    border: 2px solid blue;
+}
+
+.h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+    .cartEmpty {
+    display: grid;
+    place-items: center;
+    height: 97vh;
+    margin: 10px;
+    border: 2px solid blue;
+}
+
+.h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
 }

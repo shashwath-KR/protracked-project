@@ -52,6 +52,7 @@ input {
    padding-left: 6px;
    border: none;
    outline: none;
+   border-radius: 4px;
 }
 
 @media screen and (min-width: 600px) {
@@ -62,6 +63,7 @@ input {
    padding-left: 6px;
    border: none;
    outline: none;
+   border-radius: 5px;
 }
 }
 

@@ -3,11 +3,10 @@ import Products from './products';
 import Header from './header';
 import Navigation from './navigation';
 import axios from "axios";
+import Loading from "../img/loading.gif";
 
 const Home = ({product, setProduct, Ary}) => {
  const[input, setInput] = React.useState("");
-const[count, setCount] = React.useState(null);
-const[backg, setBackg] = React.useState(null);
 
 const Filtered = product.filter((filt) => filt.category.toUpperCase().includes(input.toUpperCase())); 
 
@@ -21,7 +20,6 @@ const Filtered = product.filter((filt) => filt.category.toUpperCase().includes(i
    position: 'absolute',
    color: 'white',
    top: '2px',
-   backgroundColor: backg
 }
 
 let url = "https://dummyjson.com/products?limit=100"
@@ -37,26 +35,26 @@ const fetchData = async() => {
   }
 }
 
-  const Carting = () => {
-      setCount(count + 1);
-     setBackg('blue')
-  }
-
     return (
         <section className="App">
         <header className="header">
-            <Header count= {count} counts= {counts} input = {input} setInput= {setInput}/>
+            <Header counts= {counts} input = {input} setInput= {setInput}/>
         </header>
       <div>
       <nav className='contain'>
         <Navigation Ary= {Ary} />
       </nav>
-      
+      {product.length < 1 && <div className = "load">
+      <img  src={Loading} alt="load gif" width="100px" height = "100px" />
+      </div> }
       <main className="App-header">
         <div className='cards'>
-        <Products count = {count} fetchData={fetchData} Carting = {Carting} pro = {Filtered} setProduct= {setProduct} />
+        {Filtered.length < 1 && <div>
+          <p>No results found for your search.</p>
+        </div>}
+        <Products fetchData={fetchData} pro = {Filtered} setProduct= {setProduct} />
        </div>
-      </main>
+      </main> 
       </div>
     </section>
     )
