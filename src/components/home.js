@@ -2,6 +2,7 @@ import React from "react";
 import Products from './products';
 import Header from './header';
 import Navigation from './navigation';
+import Footer from "./footer";
 import axios from "axios";
 import Loading from "../img/loading.gif";
 
@@ -46,7 +47,7 @@ const fetchData = async() => {
       </nav>
       {product.length < 1 && <div className = "load">
       <img  src={Loading} alt="load gif" width="100px" height = "100px" />
-      </div> }
+      </div> } 
       <main className="App-header">
         <div className='cards'>
         {Filtered.length < 1 && <div>
@@ -54,6 +55,7 @@ const fetchData = async() => {
         </div>}
         <Products fetchData={fetchData} pro = {Filtered} setProduct= {setProduct} />
        </div>
+        <Footer />
       </main> 
       </div>
     </section>

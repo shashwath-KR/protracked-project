@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import './navigate.css';
+import "../components/foot.css";
 import {FaStarHalfAlt, FaAngleLeft, FaAngleRight} from 'react-icons/fa';
 
 const Mobile = ({categ}) => {
@@ -70,6 +71,24 @@ const Mobile = ({categ}) => {
               )
             })
             }</div>
+            <div className="footer1">
+            <div className="tag1">
+            <a href="@">Contact</a>
+            <a href="@">About Us</a>
+            <a href="@">Terms & Conditions</a>
+            <a href="@">Privacy Policy</a>
+        </div>
+        <div className="tag2">
+            <a href="@">Careers</a> 
+            <a href="@">Affiliates</a> 
+            <a href="@">Blog</a> 
+        </div>
+        <div className="tag3">
+            <a href="@">Facebook</a> 
+            <a href="@">Twitter</a> 
+            <a href="@">Youtube</a> 
+        </div>
+            </div>
         </main>
     )
 }

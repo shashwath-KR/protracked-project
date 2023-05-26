@@ -10,7 +10,7 @@ html,body{
 
 .App {
   background-color: #e8eaec;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   width: auto;
   margin: 0px;
 }
@@ -18,7 +18,7 @@ html,body{
 @media screen and (min-width:600px) {
    .App {
   background-color: #e8eaec;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   width: auto;
 }
 }
