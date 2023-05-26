@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/protracked-project/static/css/main.8ceb9700.css",
-    "main.js": "/protracked-project/static/js/main.bb75bf13.js",
+    "main.css": "/protracked-project/static/css/main.fd378fce.css",
+    "main.js": "/protracked-project/static/js/main.370edc56.js",
     "static/media/Shopping-Logo.jpg": "/protracked-project/static/media/Shopping-Logo.6bde7378814434ff09ce.jpg",
     "static/media/loading.gif": "/protracked-project/static/media/loading.42aaa181adb3af3bef08.gif",
     "index.html": "/protracked-project/index.html",
-    "main.8ceb9700.css.map": "/protracked-project/static/css/main.8ceb9700.css.map",
-    "main.bb75bf13.js.map": "/protracked-project/static/js/main.bb75bf13.js.map"
+    "main.fd378fce.css.map": "/protracked-project/static/css/main.fd378fce.css.map",
+    "main.370edc56.js.map": "/protracked-project/static/js/main.370edc56.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ceb9700.css",
-    "static/js/main.bb75bf13.js"
+    "static/css/main.fd378fce.css",
+    "static/js/main.370edc56.js"
   ]
 }
